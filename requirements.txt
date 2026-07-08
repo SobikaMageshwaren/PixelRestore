@@ -12,5 +12,6 @@ deepinv
 requests
 Pillow
 scipy
+plotly
 tqdm
 streamlit-image-comparison
