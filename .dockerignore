@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.env
+.venv/
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Cache
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Outputs
+outputs/
+reports/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+
+# Temporary Files
+*.tmp
+
+# Model Checkpoints (if downloaded separately)
+*.ckpt

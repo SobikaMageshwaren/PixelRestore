@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+
+  visionrestore:
+
+    build: .
+
+    container_name: visionrestore_ai
+
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./reports:/app/reports
+
+    working_dir: /app
+
+    tty: true
+
+    stdin_open: true
+
+    command: python main.py
