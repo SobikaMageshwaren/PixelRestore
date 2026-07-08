@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 # Import Restoration Modules
 # ---------------------------------------------------------
 
-from restoration.dncnn import DnCNNRestorer
+# from restoration.dncnn import DnCNNRestorer
 
 from restoration.contrast import enhance_contrast
 
@@ -34,7 +34,7 @@ from restoration.low_light import enhance_low_light
 
 from restoration.median_filter import median_denoise
 
-from restoration.swinir import SwinIRRestorer
+# from restoration.swinir import SwinIRRestorer
 
 
 # ==========================================================
@@ -121,6 +121,7 @@ def execute_pipeline(image, recommendation, report):
         if model == "DnCNN":
 
             if dncnn is None:
+                from restoration.dncnn import DnCNNRestorer
 
                 dncnn = DnCNNRestorer()
 
@@ -160,6 +161,7 @@ def execute_pipeline(image, recommendation, report):
         elif model == "SwinIR":
 
             if swinir is None:
+                from restoration.swinir import SwinIRRestorer
 
                 swinir = SwinIRRestorer()
 

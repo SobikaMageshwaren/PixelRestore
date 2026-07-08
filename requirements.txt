@@ -13,3 +13,4 @@ requests
 Pillow
 scipy
 tqdm
+streamlit-image-comparison
